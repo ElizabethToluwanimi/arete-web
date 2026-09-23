@@ -1,0 +1,1820 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Building Class in Nigeria | Learn to Build Professional Websites | Arete Academia</title>
+  <meta name="description" content="Learn practical website building with Arete Academia. Build real websites, develop practical digital skills, and learn how to create professional websites from scratch — beginner-friendly.">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Website Building Class in Nigeria | Arete Academia">
+  <meta property="og:description" content="Learn practical website building from scratch and create real websites for yourself, businesses, personal brands, and clients. Zero coding required.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_NG">
+
+  <!-- Meta Pixel Code (ID: 887193380950511) -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '887193380950511');
+    fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            arete: {
+              50: '#eef4ff',
+              100: '#d9e5ff',
+              200: '#bcd3ff',
+              500: '#1d4ed8',
+              600: '#0c41a2',
+              700: '#0a3585',
+              800: '#082d73',
+              900: '#061f52',
+            },
+            accent: {
+              gold: '#f59e0b',
+              amber: '#d97706',
+              green: '#10b981',
+              emerald: '#059669',
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+            serif: ['Newsreader', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom utility styling */
+    .glass-card {
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(226, 232, 240, 0.8);
+    }
+    .gradient-hero {
+      background: radial-gradient(circle at 10% 20%, rgba(12, 65, 162, 0.04) 0%, rgba(255, 255, 255, 1) 90%);
+    }
+    .cta-shadow {
+      box-shadow: 0 12px 25px -4px rgba(12, 65, 162, 0.35);
+    }
+    .glow-amber {
+      box-shadow: 0 0 25px rgba(245, 158, 11, 0.35);
+    }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-arete-100 selection:text-arete-800">
+
+  <!-- Meta Pixel NoScript Fallback -->
+  <noscript>
+    <img height="1" width="1" style="display:none" 
+         src="https://www.facebook.com/tr?id=887193380950511&ev=PageView&noscript=1" />
+  </noscript>
+
+  <div class="bg-gradient-to-r from-arete-900 via-arete-800 to-arete-700 text-white text-xs sm:text-sm py-2.5 px-4 text-center font-medium shadow-inner relative z-50">
+    <div class="max-w-6xl mx-auto flex items-center justify-center gap-2">
+      <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-amber-400 text-slate-950 uppercase tracking-wider animate-pulse">
+        Live Batch
+      </span>
+      <span>Live Practical Masterclass • Early Bird Admission: <strong class="text-amber-300 font-bold">₦9,999</strong> • Zero Coding Required</span>
+      <a href="#register" class="hidden md:inline-flex items-center underline hover:text-amber-200 font-semibold ml-2 text-xs">
+        Reserve Your Seat &rarr;
+      </a>
+    </div>
+  </div>
+
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo SVG -->
+      <a href="#" class="flex items-center gap-3.5 group">
+        <div class="flex items-center gap-2">
+          <!-- Chevron Logo Mark -->
+          <svg class="w-9 h-9 text-arete-600 transition-transform group-hover:scale-105" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 65 L50 30 L85 65" stroke="#0c41a2" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="h-8 w-[2.5px] bg-arete-600 rounded-full"></div>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif text-2xl font-bold tracking-tight text-arete-800 leading-none">Arete</span>
+          <span class="text-[10px] text-slate-500 font-medium tracking-wide">moving you forward</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-600">
+        <a href="#learn" class="hover:text-arete-600 transition-colors">What You'll Learn</a>
+        <a href="#projects" class="hover:text-arete-600 transition-colors">Projects You'll Build</a>
+        <a href="#who-is-it-for" class="hover:text-arete-600 transition-colors">Who It's For</a>
+        <a href="#why-learn" class="hover:text-arete-600 transition-colors">Why Learn</a>
+        <a href="#how-it-works" class="hover:text-arete-600 transition-colors">How It Works</a>
+        <a href="#faq" class="hover:text-arete-600 transition-colors">FAQ</a>
+      </nav>
+
+      <!-- Header CTAs -->
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/2349029343288?text=Hello%20Arete%20Academia%2C%20I%20have%20an%20inquiry%20about%20the%20Website%20Building%20Class." 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 rounded-lg border border-emerald-200 transition-all"
+           title="Inquire directly on WhatsApp">
+          <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i>
+          <span>Chat on WhatsApp</span>
+        </a>
+
+        <a href="#register" class="inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-sm font-bold text-white bg-arete-600 hover:bg-arete-700 cta-shadow transition-all duration-200 hover:-translate-y-0.5">
+          <span>ENROLL FOR ₦9,999</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuBtn" class="lg:hidden p-2 text-slate-600 hover:text-slate-900 rounded-lg focus:outline-none">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 space-y-3 shadow-lg">
+      <a href="#learn" class="block py-2 text-base font-semibold text-slate-700 hover:text-arete-600 mobile-nav-link">What You'll Learn</a>
+      <a href="#projects" class="block py-2 text-base font-semibold text-slate-700 hover:text-arete-600 mobile-nav-link">Projects You'll Build</a>
+      <a href="#who-is-it-for" class="block py-2 text-base font-semibold text-slate-700 hover:text-arete-600 mobile-nav-link">Who It's For</a>
+      <a href="#why-learn" class="block py-2 text-base font-semibold text-slate-700 hover:text-arete-600 mobile-nav-link">Why Learn</a>
+      <a href="#how-it-works" class="block py-2 text-base font-semibold text-slate-700 hover:text-arete-600 mobile-nav-link">How It Works</a>
+      <a href="#faq" class="block py-2 text-base font-semibold text-slate-700 hover:text-arete-600 mobile-nav-link">FAQ</a>
+      <div class="pt-3 border-t border-slate-100 flex flex-col gap-2">
+        <a href="#register" class="w-full text-center py-3 bg-arete-600 text-white font-bold rounded-lg mobile-nav-link">
+          REGISTER FOR THE CLASS (₦9,999)
+        </a>
+        <a href="https://wa.me/2349029343288?text=Hello%20Arete%20Academia%2C%20I%20have%20a%20question%20about%20the%20live%20class" target="_blank" class="w-full text-center py-2.5 bg-emerald-50 text-emerald-700 font-semibold rounded-lg border border-emerald-200 flex items-center justify-center gap-2">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>Ask Questions on WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="relative pt-10 pb-16 md:pt-16 md:pb-24 overflow-hidden gradient-hero">
+    <div class="absolute top-0 right-10 w-96 h-96 bg-blue-200/40 rounded-full filter blur-3xl pointer-events-none -z-10"></div>
+    <div class="absolute bottom-10 left-10 w-80 h-80 bg-amber-100/50 rounded-full filter blur-3xl pointer-events-none -z-10"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Trust Pill & Badge -->
+      <div class="flex flex-wrap items-center justify-center gap-2 mb-6">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-arete-700 text-xs sm:text-sm font-semibold">
+          <span class="w-2 h-2 rounded-full bg-blue-600 animate-ping"></span>
+          <span>Arete Academia • Practical Live Training</span>
+        </div>
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-bold">
+          <i data-lucide="zap" class="w-3.5 h-3.5 text-amber-500 fill-amber-500"></i>
+          <span>Zero Coding Required</span>
+        </div>
+      </div>
+
+      <!-- Main Headline & Subtitle -->
+      <div class="text-center max-w-4xl mx-auto">
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+          BUILD PROFESSIONAL WEBSITES — <span class="text-arete-600 underline decoration-amber-400 decoration-wavy decoration-2">EVEN IF YOU'RE A BEGINNER</span>
+        </h1>
+        
+        <p class="mt-6 text-lg sm:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto">
+          Learn practical website building from scratch and create real websites for yourself, businesses, personal brands, and clients.
+        </p>
+
+        <!-- Trust statement line -->
+        <div class="mt-4 flex items-center justify-center gap-3 text-xs sm:text-sm font-medium text-slate-500">
+          <span>Beginner-Friendly</span>
+          <span>•</span>
+          <span>Practical Training</span>
+          <span>•</span>
+          <span>Build Real Websites</span>
+        </div>
+
+        <!-- Hero Action Buttons -->
+        <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="#register" class="w-full sm:w-auto px-8 py-4 rounded-xl text-base font-bold text-white bg-arete-600 hover:bg-arete-700 cta-shadow transition-all duration-200 flex items-center justify-center gap-2 group hover:-translate-y-0.5">
+            <span>REGISTER FOR THE CLASS</span>
+            <i data-lucide="arrow-right" class="w-5 h-5 transition-transform group-hover:translate-x-1"></i>
+          </a>
+          
+          <a href="#projects" class="w-full sm:w-auto px-7 py-4 rounded-xl text-base font-semibold text-slate-700 bg-white hover:bg-slate-50 border border-slate-300 transition-all flex items-center justify-center gap-2 hover:border-slate-400 shadow-sm">
+            <i data-lucide="layers" class="w-5 h-5 text-slate-500"></i>
+            <span>SEE WHAT YOU'LL BUILD</span>
+          </a>
+        </div>
+
+        <!-- Meta Ad Pricing Pill -->
+        <div class="mt-4 inline-flex items-center gap-2 text-xs font-semibold text-slate-600 bg-slate-100/90 px-4 py-1.5 rounded-full">
+          <span>Standard Fee: <s class="text-slate-400">₦45,000</s></span>
+          <span class="text-arete-700 font-bold text-sm">Today: Only ₦9,999</span>
+          <span class="bg-emerald-100 text-emerald-800 text-[10px] px-2 py-0.5 rounded font-bold uppercase">78% OFF</span>
+        </div>
+      </div>
+
+      <div class="mt-14 max-w-5xl mx-auto">
+        <div class="relative rounded-2xl bg-gradient-to-b from-slate-900 via-slate-800 to-slate-950 p-3 sm:p-6 shadow-2xl border border-slate-700">
+          
+          <div class="flex flex-col sm:flex-row items-center justify-between pb-4 border-b border-slate-700/80 gap-3">
+            <div class="flex items-center gap-2 self-start sm:self-auto">
+              <span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span>
+              <span class="w-3 h-3 rounded-full bg-yellow-500 inline-block"></span>
+              <span class="w-3 h-3 rounded-full bg-green-500 inline-block"></span>
+              <span class="text-xs font-mono text-slate-400 ml-2">preview.arete.academy/sample-site</span>
+            </div>
+
+            <div class="flex items-center bg-slate-800/90 p-1 rounded-lg border border-slate-700 text-xs text-slate-300">
+              <button onclick="switchMockup('biz')" id="tab-biz" class="px-3 py-1 rounded font-medium bg-arete-600 text-white transition-all">Business Website</button>
+              <button onclick="switchMockup('portfolio')" id="tab-portfolio" class="px-3 py-1 rounded font-medium hover:text-white transition-all">Portfolio</button>
+              <button onclick="switchMockup('landing')" id="tab-landing" class="px-3 py-1 rounded font-medium hover:text-white transition-all">Landing Page</button>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 mt-4 items-center">
+            
+            <div class="lg:col-span-8 bg-white rounded-xl overflow-hidden shadow-inner border border-slate-200">
+              <div class="bg-slate-100 px-4 py-2 border-b border-slate-200 flex items-center justify-between text-xs text-slate-500">
+                <div class="flex items-center gap-2">
+                  <i data-lucide="globe" class="w-3.5 h-3.5 text-slate-400"></i>
+                  <span id="mockup-url" class="font-medium text-slate-600 truncate">https://nexus-logistics.com</span>
+                </div>
+                <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2 py-0.5 rounded-full">SSL Active</span>
+              </div>
+
+              <div id="mockup-screen-laptop" class="p-6 h-64 sm:h-72 overflow-hidden bg-slate-50 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                  <div class="flex justify-between items-center pb-3 border-b border-slate-200">
+                    <div class="font-bold text-arete-700 tracking-tight text-sm" id="mockup-brand">Nexus Delivery & Freight</div>
+                    <div class="flex gap-3 text-[11px] font-medium text-slate-500">
+                      <span>Services</span>
+                      <span>Rates</span>
+                      <span>Track</span>
+                      <span class="text-arete-600 font-bold">Contact</span>
+                    </div>
+                  </div>
+                  <div class="mt-5 max-w-md">
+                    <span class="text-[10px] font-bold tracking-wider text-amber-600 uppercase bg-amber-100 px-2 py-0.5 rounded" id="mockup-tag">Logistics & Supply</span>
+                    <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 mt-2" id="mockup-title">Fast, Reliable Interstate Freight Across Nigeria</h3>
+                    <p class="text-xs text-slate-500 mt-1" id="mockup-desc">End-to-end deliveries with GPS tracking, scheduled pickups, and instant online quotes.</p>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-3 pt-4">
+                  <div class="px-3.5 py-1.5 bg-arete-600 text-white rounded text-xs font-bold" id="mockup-btn">Book Shipment</div>
+                  <div class="px-3 py-1.5 border border-slate-300 rounded text-xs text-slate-600 font-medium">Track Order</div>
+                  <div class="ml-auto text-[11px] text-slate-400 font-mono">100% Mobile Ready</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-4 flex justify-center">
+              <div class="w-56 bg-slate-950 p-2.5 rounded-[2.5rem] border-4 border-slate-700 shadow-2xl relative">
+                <div class="w-20 h-3.5 bg-slate-800 rounded-full mx-auto mb-2 flex items-center justify-center">
+                  <div class="w-2.5 h-2.5 rounded-full bg-slate-900 mr-1"></div>
+                </div>
+                
+                <div class="bg-white rounded-[1.8rem] p-3 text-slate-800 h-64 overflow-hidden flex flex-col justify-between">
+                  <div>
+                    <div class="flex justify-between items-center pb-2 border-b border-slate-100">
+                      <span class="text-[10px] font-bold text-arete-700">Arete Build</span>
+                      <i data-lucide="menu" class="w-3.5 h-3.5 text-slate-600"></i>
+                    </div>
+                    <div class="mt-3">
+                      <div class="w-full h-16 bg-gradient-to-br from-blue-600 to-arete-800 rounded-lg flex items-center justify-center text-white text-[11px] font-bold p-2 text-center" id="phone-banner">
+                        Mobile Responsive Layout
+                      </div>
+                      <p class="text-[10px] text-slate-600 mt-2 font-medium" id="phone-sub">Optimized for every smartphone screen size automatically.</p>
+                    </div>
+                  </div>
+                  <div class="w-full py-2 bg-emerald-600 text-white text-center rounded-lg text-[11px] font-bold">
+                    Direct WhatsApp CTA
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="mt-4 pt-3 border-t border-slate-800 flex flex-wrap items-center justify-between text-xs text-slate-400">
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
+              <span>Interactive visual editors • Zero complex coding setups • Done in hours</span>
+            </div>
+            <div class="text-slate-400 font-medium mt-1 sm:mt-0">
+              Instructor Experience: <strong class="text-slate-200">5+ Years in Web Engineering</strong>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-white border-y border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto">
+        <span class="text-xs uppercase tracking-widest font-bold text-arete-600 bg-arete-50 px-3 py-1 rounded-full border border-arete-200">
+          The Frustration Ends Here
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">
+          Still Depending on Someone Else to Build Every Website?
+        </h2>
+        <p class="mt-4 text-base sm:text-lg text-slate-600">
+          Businesses, entrepreneurs, creators, students, organizations, and professionals increasingly need websites to survive in modern business. Yet most are held back by high costs and technical barriers.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+        
+        <div class="p-6 rounded-xl border border-red-100 bg-red-50/40 hover:bg-red-50/70 transition-all">
+          <div class="w-10 h-10 rounded-lg bg-red-100 text-red-600 flex items-center justify-center font-bold mb-4">
+            <i data-lucide="banknote" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-base">Paying Someone Every Single Time</h3>
+          <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+            Paying ₦80,000 to ₦250,000+ each time you or your business needs a simple landing page, portfolio, or update.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-xl border border-amber-100 bg-amber-50/40 hover:bg-amber-50/70 transition-all">
+          <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center font-bold mb-4">
+            <i data-lucide="lightbulb-off" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-base">Having Great Ideas but Stuck</h3>
+          <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+            Having brilliant ideas for products, campaigns, or side hustles, but not knowing how to bring them to life online.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-xl border border-slate-200 bg-slate-50/80 hover:bg-slate-100 transition-all">
+          <div class="w-10 h-10 rounded-lg bg-slate-200 text-slate-700 flex items-center justify-center font-bold mb-4">
+            <i data-lucide="briefcase" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-base">Wanting to Offer Web Design as a Service</h3>
+          <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+            Seeing thousands of small businesses around you that urgently need websites, but lacking the practical skills to charge for it.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-xl border border-blue-100 bg-blue-50/40 hover:bg-blue-50/70 transition-all">
+          <div class="w-10 h-10 rounded-lg bg-blue-100 text-arete-600 flex items-center justify-center font-bold mb-4">
+            <i data-lucide="user-check" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-base">Building Your Own Brand Authority</h3>
+          <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+            Relying solely on social media pages that can be suspended or throttled instead of having a website you control.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-xl border border-purple-100 bg-purple-50/40 hover:bg-purple-50/70 transition-all">
+          <div class="w-10 h-10 rounded-lg bg-purple-100 text-purple-600 flex items-center justify-center font-bold mb-4">
+            <i data-lucide="trending-up" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-base">Adding a High-Income Digital Skill</h3>
+          <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+            Wanting to stand out in the job market, enhance your CV, and add website creation to your digital toolkit.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-xl border border-emerald-200 bg-emerald-50/60 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold mb-4">
+              <i data-lucide="sparkles" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-bold text-emerald-900 text-base">The Solution</h3>
+            <p class="mt-2 text-sm text-emerald-800 font-semibold leading-relaxed">
+              You can learn how to build them yourself without years of coding or expensive degrees.
+            </p>
+          </div>
+          <a href="#register" class="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-emerald-700 hover:text-emerald-900">
+            <span>Get Started with Arete</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="mt-12 p-6 rounded-2xl bg-gradient-to-r from-arete-900 to-arete-700 text-white text-center max-w-4xl mx-auto shadow-md">
+        <h3 class="text-xl sm:text-2xl font-bold">You can learn how to build them yourself.</h3>
+        <p class="text-sm sm:text-base text-blue-100 mt-2 max-w-2xl mx-auto">
+          In this live training, you'll be guided step-by-step to plan, assemble, design, and publish websites with complete confidence.
+        </p>
+        <a href="#register" class="mt-5 inline-flex items-center px-6 py-2.5 rounded-lg bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-sm transition-all shadow">
+          Join the Upcoming Cohort (₦9,999)
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="learn" class="py-16 md:py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto">
+        <span class="text-xs uppercase tracking-widest font-bold text-arete-600 bg-arete-100/70 px-3 py-1 rounded-full">Curriculum Overview</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">What You'll Learn</h2>
+        <p class="mt-3 text-base text-slate-600">
+          Everything you need to go from absolute beginner to building functional, modern websites for real use.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+        
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all group">
+          <div class="text-xs font-mono font-bold text-arete-600 bg-arete-50 inline-block px-2.5 py-1 rounded-md mb-4 group-hover:bg-arete-600 group-hover:text-white transition-colors">
+            MODULE 01
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 group-hover:text-arete-700 transition-colors">Website Fundamentals</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Understand how websites work, domains, hosting, structure, and the basic components behind them.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all group">
+          <div class="text-xs font-mono font-bold text-arete-600 bg-arete-50 inline-block px-2.5 py-1 rounded-md mb-4 group-hover:bg-arete-600 group-hover:text-white transition-colors">
+            MODULE 02
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 group-hover:text-arete-700 transition-colors">Website Design</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Learn how to structure pages and create clean, professional website layouts, color harmony, and fonts.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all group">
+          <div class="text-xs font-mono font-bold text-arete-600 bg-arete-50 inline-block px-2.5 py-1 rounded-md mb-4 group-hover:bg-arete-600 group-hover:text-white transition-colors">
+            MODULE 03
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 group-hover:text-arete-700 transition-colors">Building Websites</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Learn how to create functional websites from scratch using intuitive visual builders and modern tools.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all group">
+          <div class="text-xs font-mono font-bold text-arete-600 bg-arete-50 inline-block px-2.5 py-1 rounded-md mb-4 group-hover:bg-arete-600 group-hover:text-white transition-colors">
+            MODULE 04
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 group-hover:text-arete-700 transition-colors">Responsive Design</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Learn how to make websites look good and adapt perfectly on phones, tablets, and computers.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all group">
+          <div class="text-xs font-mono font-bold text-arete-600 bg-arete-50 inline-block px-2.5 py-1 rounded-md mb-4 group-hover:bg-arete-600 group-hover:text-white transition-colors">
+            MODULE 05
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 group-hover:text-arete-700 transition-colors">Forms & User Interaction</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Learn how to create forms, buttons, navigation, WhatsApp links, and interactive elements that convert visitors.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all group">
+          <div class="text-xs font-mono font-bold text-arete-600 bg-arete-50 inline-block px-2.5 py-1 rounded-md mb-4 group-hover:bg-arete-600 group-hover:text-white transition-colors">
+            MODULE 06
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 group-hover:text-arete-700 transition-colors">Publishing Websites</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Learn the basic process of taking a completed website online with custom domain connections.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all group">
+          <div class="text-xs font-mono font-bold text-amber-700 bg-amber-50 inline-block px-2.5 py-1 rounded-md mb-4 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+            MODULE 07 (BONUS)
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 group-hover:text-arete-700 transition-colors">AI-Assisted Website Building</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Learn how modern AI tools can help you generate copy, select images, and speed up your workflow significantly.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all group">
+          <div class="text-xs font-mono font-bold text-emerald-700 bg-emerald-50 inline-block px-2.5 py-1 rounded-md mb-4 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+            MODULE 08
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 group-hover:text-arete-700 transition-colors">Building for Clients</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Understand how to approach website projects for businesses, prepare proposals, deliver work, and charge clients.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-white border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto">
+        <span class="text-xs uppercase tracking-widest font-bold text-arete-600 bg-arete-50 px-3 py-1 rounded-full">Hands-on Execution</span>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 mt-3 tracking-tight">
+          Don't Just Learn. BUILD.
+        </h2>
+        <p class="mt-4 text-base sm:text-lg text-slate-600">
+          You'll learn by creating real website projects. No boring theoretical lectures without real-world output.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-14">
+        
+        <div class="rounded-2xl border border-slate-200 p-6 bg-slate-50 hover:bg-white hover:shadow-lg transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-100 text-arete-700 flex items-center justify-center mb-4">
+              <i data-lucide="building" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-mono font-bold text-slate-400 uppercase">Project 1</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1">Business Website</h3>
+            <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+              A professional website for a small business featuring company overview, services list, testimonials, and inquiry form.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-200/80 text-xs font-semibold text-arete-700 flex items-center gap-1">
+            <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+            <span>Small Business Ready</span>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border border-slate-200 p-6 bg-slate-50 hover:bg-white hover:shadow-lg transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center mb-4">
+              <i data-lucide="user" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-mono font-bold text-slate-400 uppercase">Project 2</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1">Personal Portfolio</h3>
+            <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+              A personal portfolio website for showcasing personal skills, past projects, resume, and contact links for recruiters and clients.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-200/80 text-xs font-semibold text-purple-700 flex items-center gap-1">
+            <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+            <span>Personal Branding</span>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border border-slate-200 p-6 bg-slate-50 hover:bg-white hover:shadow-lg transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center mb-4">
+              <i data-lucide="target" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-mono font-bold text-slate-400 uppercase">Project 3</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1">Landing Page</h3>
+            <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+              A high-converting landing page for a specific product, event, course, or ad campaign with compelling CTAs and lead capture.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-200/80 text-xs font-semibold text-amber-700 flex items-center gap-1">
+            <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+            <span>Meta Ad Optimized</span>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border border-slate-200 p-6 bg-slate-50 hover:bg-white hover:shadow-lg transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-4">
+              <i data-lucide="briefcase" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-mono font-bold text-slate-400 uppercase">Project 4</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1">Professional Service Website</h3>
+            <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+              A website for a consultant, freelancer, digital agency, or service provider with booking buttons and service breakdowns.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-200/80 text-xs font-semibold text-emerald-700 flex items-center gap-1">
+            <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+            <span>Client Booking Ready</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-12 bg-slate-900 text-white p-8 rounded-2xl shadow-xl text-center max-w-4xl mx-auto border border-slate-700">
+        <p class="text-lg sm:text-2xl font-extrabold tracking-tight text-amber-300">
+          "By the end of the training, you won't just have watched lessons — you'll have websites you can actually show."
+        </p>
+        <p class="text-sm text-slate-300 mt-2">
+          Add them to your portfolio, publish them for your own business, or show them to your very first prospective client.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="projects" class="py-16 md:py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto">
+        <span class="text-xs uppercase tracking-widest font-bold text-arete-600 bg-blue-100 px-3 py-1 rounded-full">Demonstration Showcase</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">
+          WEBSITE PROJECTS YOU'LL LEARN TO BUILD
+        </h2>
+        <p class="mt-3 text-sm sm:text-base text-slate-600">
+          Realistic website blueprints designed to show you exactly the caliber of clean, professional layouts you will master.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+        
+        <!-- Project 1: Business Website -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col">
+          <div class="bg-slate-900 p-4 border-b border-slate-800 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-red-500"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-yellow-500"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-green-500"></span>
+              <span class="text-xs font-mono text-slate-400 ml-2">urbanprime-properties.ng</span>
+            </div>
+            <span class="text-[10px] font-bold uppercase bg-blue-900 text-blue-200 px-2 py-0.5 rounded">Business Site</span>
+          </div>
+
+          <div class="p-6 bg-gradient-to-br from-slate-50 to-blue-50/50 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center pb-3 border-b border-slate-200">
+                <span class="font-bold text-arete-800 text-sm">UrbanPrime Realty</span>
+                <span class="text-xs bg-arete-600 text-white px-2.5 py-1 rounded">View Listings</span>
+              </div>
+              <div class="mt-5">
+                <h4 class="text-xl font-extrabold text-slate-900">Luxury Commercial & Residential Real Estate</h4>
+                <p class="text-xs text-slate-600 mt-2">Featuring multi-page layout, property filtering cards, agent profile sections, and automated lead inquiry forms.</p>
+              </div>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between">
+              <span class="text-xs font-medium text-slate-500">Includes: Mobile Navigation, Contact Form</span>
+              <button onclick="openProjectModal('Business Website', 'UrbanPrime Real Estate Agency', 'Demonstrates modern multi-section layout, hero typography, fast-loading images, client testimonials, and automated inquiry forms connected directly to WhatsApp or email.')" class="px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-lg text-xs font-bold transition-all">
+                View Project Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Restaurant / Cafe Website -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col">
+          <div class="bg-slate-900 p-4 border-b border-slate-800 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-red-500"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-yellow-500"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-green-500"></span>
+              <span class="text-xs font-mono text-slate-400 ml-2">zafran-bistro.com</span>
+            </div>
+            <span class="text-[10px] font-bold uppercase bg-amber-900 text-amber-200 px-2 py-0.5 rounded">Hospitality</span>
+          </div>
+
+          <div class="p-6 bg-gradient-to-br from-amber-50/40 to-slate-50 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center pb-3 border-b border-slate-200">
+                <span class="font-bold text-amber-900 text-sm">Zafran Continental Bistro</span>
+                <span class="text-xs bg-amber-600 text-white px-2.5 py-1 rounded">Book Table</span>
+              </div>
+              <div class="mt-5">
+                <h4 class="text-xl font-extrabold text-slate-900">Modern Restaurant & Menu Ordering Site</h4>
+                <p class="text-xs text-slate-600 mt-2">Featuring an interactive digital food menu, price cards, table reservation button, and Google Maps location integration.</p>
+              </div>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between">
+              <span class="text-xs font-medium text-slate-500">Includes: Menu cards, Table reservation</span>
+              <button onclick="openProjectModal('Restaurant Website', 'Zafran Continental Bistro', 'A clean hospitality website equipped with category tabs for food menus, pricing badges, chef specials, and direct WhatsApp order confirmation.')" class="px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-lg text-xs font-bold transition-all">
+                View Project Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Personal Portfolio -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col">
+          <div class="bg-slate-900 p-4 border-b border-slate-800 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-red-500"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-yellow-500"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-green-500"></span>
+              <span class="text-xs font-mono text-slate-400 ml-2">david-adeyemi.dev</span>
+            </div>
+            <span class="text-[10px] font-bold uppercase bg-purple-900 text-purple-200 px-2 py-0.5 rounded">Personal Brand</span>
+          </div>
+
+          <div class="p-6 bg-gradient-to-br from-purple-50/40 to-slate-50 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center pb-3 border-b border-slate-200">
+                <span class="font-bold text-purple-950 text-sm">David Adeyemi | Brand Strategist</span>
+                <span class="text-xs bg-purple-700 text-white px-2.5 py-1 rounded">Hire Me</span>
+              </div>
+              <div class="mt-5">
+                <h4 class="text-xl font-extrabold text-slate-900">Personal Portfolio & Case Study Showcase</h4>
+                <p class="text-xs text-slate-600 mt-2">Featuring an eye-catching bio hero section, downloadable CV link, featured client work grid, and social link hub.</p>
+              </div>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between">
+              <span class="text-xs font-medium text-slate-500">Includes: Case study cards, Resume download</span>
+              <button onclick="openProjectModal('Personal Portfolio', 'David Adeyemi Portfolio', 'Designed specifically for freelancers and consultants looking to show credibility, highlight testimonials, and receive high-ticket client inquiries.')" class="px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-lg text-xs font-bold transition-all">
+                View Project Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Course / Education Website -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col">
+          <div class="bg-slate-900 p-4 border-b border-slate-800 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-red-500"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-yellow-500"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-green-500"></span>
+              <span class="text-xs font-mono text-slate-400 ml-2">apexacademy.online</span>
+            </div>
+            <span class="text-[10px] font-bold uppercase bg-emerald-900 text-emerald-200 px-2 py-0.5 rounded">Education / Landing</span>
+          </div>
+
+          <div class="p-6 bg-gradient-to-br from-emerald-50/40 to-slate-50 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center pb-3 border-b border-slate-200">
+                <span class="font-bold text-emerald-950 text-sm">Apex Tech Bootcamp</span>
+                <span class="text-xs bg-emerald-700 text-white px-2.5 py-1 rounded">Enroll Now</span>
+              </div>
+              <div class="mt-5">
+                <h4 class="text-xl font-extrabold text-slate-900">High-Converting Course Landing Page</h4>
+                <p class="text-xs text-slate-600 mt-2">Complete with timer banners, syllabus accordions, fee structures, and immediate WhatsApp onboarding redirects.</p>
+              </div>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between">
+              <span class="text-xs font-medium text-slate-500">Includes: FAQ accordion, Early bird counter</span>
+              <button onclick="openProjectModal('Education Landing Page', 'Apex Tech Bootcamp', 'A high-converting sales funnel template designed specifically for educators, tutors, and masterclass organizers to drive ticket registrations.')" class="px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-lg text-xs font-bold transition-all">
+                View Project Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="who-is-it-for" class="py-16 md:py-24 bg-white border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto">
+        <span class="text-xs uppercase tracking-widest font-bold text-arete-600 bg-arete-50 px-3 py-1 rounded-full">Target Audience</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">Who Is This Class For?</h2>
+        <p class="mt-3 text-base text-slate-600">
+          This class is built from the ground up for practical individuals ready to gain an in-demand, tangible digital skill.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-12">
+        
+        <div class="p-5 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-white hover:border-arete-500 transition-all flex items-start gap-4">
+          <div class="w-10 h-10 rounded-lg bg-blue-100 text-arete-700 flex-shrink-0 flex items-center justify-center font-bold">
+            <i data-lucide="compass" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-slate-900 text-base">Complete Beginners</h3>
+            <p class="text-xs text-slate-600 mt-1">People with zero tech background who want a friendly, structured starting point.</p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-white hover:border-arete-500 transition-all flex items-start gap-4">
+          <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-700 flex-shrink-0 flex items-center justify-center font-bold">
+            <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-slate-900 text-base">Students</h3>
+            <p class="text-xs text-slate-600 mt-1">Undergraduates seeking high-income freelance skills to earn while studying.</p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-white hover:border-arete-500 transition-all flex items-start gap-4">
+          <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-700 flex-shrink-0 flex items-center justify-center font-bold">
+            <i data-lucide="rocket" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-slate-900 text-base">Entrepreneurs</h3>
+            <p class="text-xs text-slate-600 mt-1">Founders launching new ventures who need fast, cost-effective landing pages.</p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-white hover:border-arete-500 transition-all flex items-start gap-4">
+          <div class="w-10 h-10 rounded-lg bg-purple-100 text-purple-700 flex-shrink-0 flex items-center justify-center font-bold">
+            <i data-lucide="store" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-slate-900 text-base">Business Owners</h3>
+            <p class="text-xs text-slate-600 mt-1">Owners wanting to take full control of their business's online presence and brand.</p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-white hover:border-arete-500 transition-all flex items-start gap-4">
+          <div class="w-10 h-10 rounded-lg bg-rose-100 text-rose-700 flex-shrink-0 flex items-center justify-center font-bold">
+            <i data-lucide="laptop" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-slate-900 text-base">Freelancers</h3>
+            <p class="text-xs text-slate-600 mt-1">Virtual assistants and writers wanting to expand services to web design.</p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-white hover:border-arete-500 transition-all flex items-start gap-4">
+          <div class="w-10 h-10 rounded-lg bg-cyan-100 text-cyan-700 flex-shrink-0 flex items-center justify-center font-bold">
+            <i data-lucide="palette" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-slate-900 text-base">Aspiring Website Designers</h3>
+            <p class="text-xs text-slate-600 mt-1">Anyone wanting to build an exciting career pathway in website development.</p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-white hover:border-arete-500 transition-all flex items-start gap-4">
+          <div class="w-10 h-10 rounded-lg bg-orange-100 text-orange-700 flex-shrink-0 flex items-center justify-center font-bold">
+            <i data-lucide="megaphone" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-slate-900 text-base">Digital Marketers</h3>
+            <p class="text-xs text-slate-600 mt-1">Marketers needing conversion landing pages for Facebook and Google ad funnels.</p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-white hover:border-arete-500 transition-all flex items-start gap-4">
+          <div class="w-10 h-10 rounded-lg bg-pink-100 text-pink-700 flex-shrink-0 flex items-center justify-center font-bold">
+            <i data-lucide="video" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-slate-900 text-base">Content Creators</h3>
+            <p class="text-xs text-slate-600 mt-1">Influencers and bloggers creating a central home for sponsored offers and link-in-bio.</p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-white hover:border-arete-500 transition-all flex items-start gap-4">
+          <div class="w-10 h-10 rounded-lg bg-indigo-100 text-indigo-700 flex-shrink-0 flex items-center justify-center font-bold">
+            <i data-lucide="award" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-slate-900 text-base">Personal Brand Builders</h3>
+            <p class="text-xs text-slate-600 mt-1">Professionals and executives seeking personal credibility and thought-leadership sites.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-8 text-center bg-blue-50/60 border border-blue-100 rounded-xl p-4 max-w-xl mx-auto">
+        <p class="text-sm font-semibold text-arete-800 flex items-center justify-center gap-2">
+          <i data-lucide="info" class="w-4 h-4 text-arete-600"></i>
+          <span>No previous website-building or coding experience is required.</span>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="why-learn" class="py-16 md:py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto">
+        <span class="text-xs uppercase tracking-widest font-bold text-arete-600 bg-arete-100 px-3 py-1 rounded-full">Practical Value</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">
+          One Skill. Multiple Opportunities.
+        </h2>
+        <p class="mt-3 text-base text-slate-600">
+          Website design is a foundational digital utility. Once you master it, you unlock multiple practical pathways.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+        
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-arete-600 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-blue-50 text-arete-600 flex items-center justify-center mb-4">
+            <i data-lucide="home" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Build Your Own</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Create websites for your own business, personal brand, portfolio, or projects without hiring an external agency.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-arete-600 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center mb-4">
+            <i data-lucide="briefcase" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Freelance</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Learn a tangible skill you can offer to clients, businesses, and contacts who need professional websites built.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-arete-600 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4">
+            <i data-lucide="users" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Help Businesses</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Build modern websites for local businesses, schools, and organizations that currently have zero presence on Google.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-arete-600 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center mb-4">
+            <i data-lucide="cpu" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Expand Your Digital Skills</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Combine website building with skills such as marketing, sales funnels, graphic design, and modern AI automation.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-white border-y border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto">
+        <span class="text-xs uppercase tracking-widest font-bold text-arete-600 bg-arete-50 px-3 py-1 rounded-full">Student Community</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">What Students Are Saying</h2>
+        <p class="mt-3 text-base text-slate-600">
+          Honest feedback, transparent updates, and genuine student experiences from Arete Academia sessions.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+        
+        <div class="p-6 rounded-2xl border border-dashed border-slate-300 bg-slate-50 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-3">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-slate-600 text-sm italic">
+              "The practical step-by-step breakdown made it so easy to follow. I built my first functional 3-page business website during the training without touching code."
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between">
+            <span class="text-xs font-bold text-slate-700">Past Masterclass Participant</span>
+            <span class="text-[10px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded">Verified Student</span>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl border border-dashed border-slate-300 bg-slate-50 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-3">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-slate-600 text-sm italic">
+              "As a small business owner, learning how to handle website updates and domain setups on my own saved me thousands of Naira. Highly practical live class."
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between">
+            <span class="text-xs font-bold text-slate-700">Small Business Owner</span>
+            <span class="text-[10px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded">Verified Student</span>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl border-2 border-dashed border-arete-300 bg-arete-50/50 flex flex-col justify-between">
+          <div>
+            <div class="w-8 h-8 rounded-full bg-arete-100 text-arete-700 flex items-center justify-center font-bold text-xs mb-3">
+              <i data-lucide="message-square-plus" class="w-4 h-4"></i>
+            </div>
+            <h4 class="font-bold text-slate-800 text-sm">Your Success Story Here</h4>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Genuine feedback from current and upcoming cohort students will appear here as participants complete their live projects.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-blue-200/80">
+            <a href="#register" class="text-xs font-bold text-arete-700 hover:text-arete-900 inline-flex items-center gap-1">
+              <span>Join this cohort and build yours</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4-Step Funnel Section -->
+  <section id="how-it-works" class="py-16 md:py-24 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto">
+        <span class="text-xs uppercase tracking-widest font-bold text-arete-600 bg-arete-100 px-3 py-1 rounded-full">Simple Enrollment</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">How the Training Works</h2>
+        <p class="mt-3 text-base text-slate-600">A smooth 4-step registration, payment, and onboarding pathway.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 relative">
+        
+        <!-- Step 1 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative z-10">
+          <div class="w-10 h-10 rounded-full bg-arete-600 text-white font-mono font-bold flex items-center justify-center mb-4">1</div>
+          <span class="text-xs font-bold text-arete-600 uppercase tracking-wider">STEP 1</span>
+          <h3 class="text-lg font-bold text-slate-900 mt-1">Register Details</h3>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Fill out your student details in the form below so your records are logged with Arete Academia.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative z-10">
+          <div class="w-10 h-10 rounded-full bg-emerald-600 text-white font-mono font-bold flex items-center justify-center mb-4">2</div>
+          <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">STEP 2</span>
+          <h3 class="text-lg font-bold text-slate-900 mt-1">Pay via Paystack</h3>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Complete your discounted admission payment of <strong>₦9,999</strong> securely through our Paystack gateway.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative z-10">
+          <div class="w-10 h-10 rounded-full bg-amber-500 text-white font-mono font-bold flex items-center justify-center mb-4">3</div>
+          <span class="text-xs font-bold text-amber-600 uppercase tracking-wider">STEP 3</span>
+          <h3 class="text-lg font-bold text-slate-900 mt-1">Automated Email</h3>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Instantly receive an automated onboarding email with your class schedule, syllabus, and preparatory resources.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative z-10">
+          <div class="w-10 h-10 rounded-full bg-purple-600 text-white font-mono font-bold flex items-center justify-center mb-4">4</div>
+          <span class="text-xs font-bold text-purple-600 uppercase tracking-wider">STEP 4</span>
+          <h3 class="text-lg font-bold text-slate-900 mt-1">WhatsApp Cohort</h3>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Join the exclusive student WhatsApp community for live class meeting links, support, and direct mentor Q&amp;A.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Registration Section -->
+  <section id="register" class="py-16 md:py-24 bg-gradient-to-b from-slate-900 via-arete-900 to-slate-950 text-white relative">
+    
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center max-w-2xl mx-auto">
+        <span class="text-xs uppercase tracking-widest font-bold text-amber-400 bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">
+          Admission Open • Live Cohort
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold mt-3 tracking-tight">
+          READY TO START BUILDING WEBSITES?
+        </h2>
+        <p class="mt-3 text-sm sm:text-base text-slate-300">
+          Fill in your details below to register, proceed to secure Paystack payment (<span class="text-amber-400 font-bold">₦9,999</span>), and get immediate automated onboarding into our student community.
+        </p>
+      </div>
+
+      <!-- Registration Form Card -->
+      <div class="mt-10 bg-white text-slate-900 p-6 sm:p-10 rounded-2xl shadow-2xl border border-slate-200">
+        
+        <form id="registrationForm" onsubmit="handleRegistrationSubmit(event)" novalidate class="space-y-5">
+          
+          <!-- Full Name -->
+          <div>
+            <label for="fullName" class="block text-xs sm:text-sm font-bold text-slate-700 mb-1">
+              Full Name <span class="text-red-500">*</span>
+            </label>
+            <input type="text" id="fullName" name="fullName" required placeholder="e.g., Samuel Okon" 
+                   class="w-full px-4 py-3 text-sm rounded-lg border border-slate-300 focus:ring-2 focus:ring-arete-600 focus:border-arete-600 outline-none transition-all">
+            <p id="error-fullName" class="hidden text-xs text-red-600 mt-1">Please enter your full name.</p>
+          </div>
+
+          <!-- Email & WhatsApp Number -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="email" class="block text-xs sm:text-sm font-bold text-slate-700 mb-1">
+                Email Address <span class="text-red-500">*</span>
+              </label>
+              <input type="email" id="email" name="email" required placeholder="you@gmail.com" 
+                     class="w-full px-4 py-3 text-sm rounded-lg border border-slate-300 focus:ring-2 focus:ring-arete-600 focus:border-arete-600 outline-none transition-all">
+              <p id="error-email" class="hidden text-xs text-red-600 mt-1">Please enter a valid email address.</p>
+            </div>
+
+            <div>
+              <label for="whatsapp" class="block text-xs sm:text-sm font-bold text-slate-700 mb-1">
+                WhatsApp Phone Number <span class="text-red-500">*</span>
+              </label>
+              <input type="tel" id="whatsapp" name="whatsapp" required placeholder="e.g., 08012345678" 
+                     class="w-full px-4 py-3 text-sm rounded-lg border border-slate-300 focus:ring-2 focus:ring-arete-600 focus:border-arete-600 outline-none transition-all">
+              <p id="error-whatsapp" class="hidden text-xs text-red-600 mt-1">Please enter your WhatsApp number.</p>
+            </div>
+          </div>
+
+          <!-- Current Occupation & Experience -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="occupation" class="block text-xs sm:text-sm font-bold text-slate-700 mb-1">
+                Current Occupation <span class="text-red-500">*</span>
+              </label>
+              <input type="text" id="occupation" name="occupation" required placeholder="e.g., Student, Business Owner, Freelancer" 
+                     class="w-full px-4 py-3 text-sm rounded-lg border border-slate-300 focus:ring-2 focus:ring-arete-600 focus:border-arete-600 outline-none transition-all">
+              <p id="error-occupation" class="hidden text-xs text-red-600 mt-1">Please enter your occupation.</p>
+            </div>
+
+            <div>
+              <label for="experience" class="block text-xs sm:text-sm font-bold text-slate-700 mb-1">
+                Website Building Experience <span class="text-red-500">*</span>
+              </label>
+              <select id="experience" name="experience" required 
+                      class="w-full px-4 py-3 text-sm rounded-lg border border-slate-300 bg-white focus:ring-2 focus:ring-arete-600 focus:border-arete-600 outline-none transition-all">
+                <option value="">-- Select Your Level --</option>
+                <option value="Complete Beginner">Complete Beginner (Never built one)</option>
+                <option value="Beginner">Beginner (Know very little)</option>
+                <option value="Some Experience">Some Experience (Tried tools before)</option>
+                <option value="Experienced">Experienced (Looking to refine workflow)</option>
+              </select>
+              <p id="error-experience" class="hidden text-xs text-red-600 mt-1">Please select your experience level.</p>
+            </div>
+          </div>
+
+          <!-- Why do you want to learn -->
+          <div>
+            <label for="reason" class="block text-xs sm:text-sm font-bold text-slate-700 mb-1">
+              Why do you want to learn website building? <span class="text-red-500">*</span>
+            </label>
+            <textarea id="reason" name="reason" rows="2" required placeholder="e.g., I want to build a site for my business and also offer freelance web design to clients." 
+                      class="w-full px-4 py-3 text-sm rounded-lg border border-slate-300 focus:ring-2 focus:ring-arete-600 focus:border-arete-600 outline-none transition-all"></textarea>
+            <p id="error-reason" class="hidden text-xs text-red-600 mt-1">Please state your reason for learning.</p>
+          </div>
+
+          <!-- How did you hear about this class -->
+          <div>
+            <label for="referral" class="block text-xs sm:text-sm font-bold text-slate-700 mb-1">
+              How did you hear about this class? <span class="text-red-500">*</span>
+            </label>
+            <select id="referral" name="referral" required 
+                    class="w-full px-4 py-3 text-sm rounded-lg border border-slate-300 bg-white focus:ring-2 focus:ring-arete-600 focus:border-arete-600 outline-none transition-all">
+              <option value="">-- Select Option --</option>
+              <option value="Facebook Ad">Facebook Ad</option>
+              <option value="Instagram Ad">Instagram Ad</option>
+              <option value="WhatsApp Status / Group">WhatsApp Status / Group</option>
+              <option value="Friend Referral">Friend Referral</option>
+              <option value="Other">Other</option>
+            </select>
+            <p id="error-referral" class="hidden text-xs text-red-600 mt-1">Please select how you heard about the class.</p>
+          </div>
+
+          <!-- Agreement Checkbox -->
+          <div class="pt-1">
+            <label class="flex items-start gap-3 cursor-pointer">
+              <input type="checkbox" id="agree" name="agree" required class="mt-1 h-4 w-4 text-arete-600 rounded border-slate-300 focus:ring-arete-500">
+              <span class="text-xs text-slate-600">
+                I agree to be contacted by <strong>Arete Academia</strong> regarding this training, automated onboarding emails, and cohort community access.
+              </span>
+            </label>
+            <p id="error-agree" class="hidden text-xs text-red-600 mt-1">You must agree before continuing.</p>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="pt-3">
+            <button type="submit" id="submitBtn" 
+                    class="w-full py-4 px-6 rounded-xl font-bold text-base text-white bg-emerald-600 hover:bg-emerald-700 active:scale-[0.99] transition-all flex items-center justify-center gap-2 shadow-lg hover:shadow-emerald-600/30">
+              <i data-lucide="credit-card" class="w-5 h-5"></i>
+              <span id="submitBtnText">PROCEED TO PAY ₦9,999 ON PAYSTACK</span>
+            </button>
+            <p class="text-center text-[11px] text-slate-500 mt-2">
+              🔒 Safe & Secure 256-bit encrypted payment via Paystack. You will receive an instant confirmation email and WhatsApp group link right after.
+            </p>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="faq" class="py-16 md:py-24 bg-white border-y border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto">
+        <span class="text-xs uppercase tracking-widest font-bold text-arete-600 bg-arete-50 px-3 py-1 rounded-full">Got Questions?</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">Frequently Asked Questions</h2>
+        <p class="mt-3 text-sm sm:text-base text-slate-600">Quick answers to help you make an informed decision.</p>
+      </div>
+
+      <div class="mt-12 space-y-4">
+        
+        <!-- Q1 -->
+        <div class="border border-slate-200 rounded-xl overflow-hidden bg-slate-50">
+          <button onclick="toggleFaq(1)" class="w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center hover:text-arete-600 transition-colors">
+            <span>Do I need previous website-building experience?</span>
+            <i id="faq-icon-1" data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform"></i>
+          </button>
+          <div id="faq-ans-1" class="hidden px-6 pb-4 text-sm text-slate-600 border-t border-slate-200/60 pt-3">
+            No. The training is designed specifically to be beginner-friendly. We start from the core fundamentals and walk you through every step in plain language.
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="border border-slate-200 rounded-xl overflow-hidden bg-slate-50">
+          <button onclick="toggleFaq(2)" class="w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center hover:text-arete-600 transition-colors">
+            <span>Do I need a laptop?</span>
+            <i id="faq-icon-2" data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform"></i>
+          </button>
+          <div id="faq-ans-2" class="hidden px-6 pb-4 text-sm text-slate-600 border-t border-slate-200/60 pt-3">
+            A laptop or computer is recommended because the training is practical and real-world website building workflows are most efficient on a larger screen. However, you can also follow the concepts and mobile-friendly site management tools on your smartphone.
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="border border-slate-200 rounded-xl overflow-hidden bg-slate-50">
+          <button onclick="toggleFaq(3)" class="w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center hover:text-arete-600 transition-colors">
+            <span>Is this suitable for absolute beginners?</span>
+            <i id="faq-icon-3" data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform"></i>
+          </button>
+          <div id="faq-ans-3" class="hidden px-6 pb-4 text-sm text-slate-600 border-t border-slate-200/60 pt-3">
+            Yes, 100%. We assume zero prior knowledge of web design or code.
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="border border-slate-200 rounded-xl overflow-hidden bg-slate-50">
+          <button onclick="toggleFaq(4)" class="w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center hover:text-arete-600 transition-colors">
+            <span>Will I build actual websites?</span>
+            <i id="faq-icon-4" data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform"></i>
+          </button>
+          <div id="faq-ans-4" class="hidden px-6 pb-4 text-sm text-slate-600 border-t border-slate-200/60 pt-3">
+            Yes. The training focuses directly on practical projects: you will create actual live layouts, landing pages, and functional portfolios.
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="border border-slate-200 rounded-xl overflow-hidden bg-slate-50">
+          <button onclick="toggleFaq(5)" class="w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center hover:text-arete-600 transition-colors">
+            <span>Can I use the skill for my own business?</span>
+            <i id="faq-icon-5" data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform"></i>
+          </button>
+          <div id="faq-ans-5" class="hidden px-6 pb-4 text-sm text-slate-600 border-t border-slate-200/60 pt-3">
+            Yes. You can use the knowledge to build, edit, and update websites for your own projects, businesses, and personal brand without ongoing agency fees.
+          </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="border border-slate-200 rounded-xl overflow-hidden bg-slate-50">
+          <button onclick="toggleFaq(6)" class="w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center hover:text-arete-600 transition-colors">
+            <span>Can I use the skill for freelance work?</span>
+            <i id="faq-icon-6" data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform"></i>
+          </button>
+          <div id="faq-ans-6" class="hidden px-6 pb-4 text-sm text-slate-600 border-t border-slate-200/60 pt-3">
+            Yes. Website building can be offered as a freelance service, depending on your skills, portfolio quality, pricing, and ability to attract clients. We dedicate Module 08 specifically to client management and project delivery.
+          </div>
+        </div>
+
+        <!-- Q7 -->
+        <div class="border border-slate-200 rounded-xl overflow-hidden bg-slate-50">
+          <button onclick="toggleFaq(7)" class="w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center hover:text-arete-600 transition-colors">
+            <span>How do I pay and gain access?</span>
+            <i id="faq-icon-7" data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform"></i>
+          </button>
+          <div id="faq-ans-7" class="hidden px-6 pb-4 text-sm text-slate-600 border-t border-slate-200/60 pt-3">
+            Simply submit your details in the registration form and you will immediately proceed to our secure Paystack checkout. As soon as payment is confirmed, your automated welcome email with syllabus materials and cohort WhatsApp group link will be delivered straight to your inbox.
+          </div>
+        </div>
+
+        <!-- Q8 -->
+        <div class="border border-slate-200 rounded-xl overflow-hidden bg-slate-50">
+          <button onclick="toggleFaq(8)" class="w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center hover:text-arete-600 transition-colors">
+            <span>How can I contact Arete Academia?</span>
+            <i id="faq-icon-8" data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform"></i>
+          </button>
+          <div id="faq-ans-8" class="hidden px-6 pb-4 text-sm text-slate-600 border-t border-slate-200/60 pt-3">
+            WhatsApp: <a href="https://wa.me/2349029343288" class="text-arete-600 font-bold underline">09029343288</a><br>
+            Email: <a href="mailto:ARETEAI.CAMP@GMAIL.COM" class="text-arete-600 font-bold underline">ARETEAI.CAMP@GMAIL.COM</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-16 md:py-20 bg-gradient-to-r from-arete-800 via-arete-700 to-arete-900 text-white relative overflow-hidden text-center">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <h2 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+        YOUR NEXT DIGITAL SKILL COULD START WITH ONE WEBSITE.
+      </h2>
+      
+      <p class="mt-4 text-base sm:text-xl text-blue-100 max-w-2xl mx-auto">
+        Stop only consuming websites. Learn how to build them.
+      </p>
+
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#register" class="w-full sm:w-auto px-8 py-4 rounded-xl text-base font-extrabold text-slate-950 bg-amber-400 hover:bg-amber-300 transition-all shadow-xl hover:-translate-y-0.5">
+          START YOUR REGISTRATION (₦9,999)
+        </a>
+        
+        <a href="https://wa.me/2349029343288?text=Hello%20Arete%20Academia%2C%20I%20would%20like%20to%20chat%20about%20the%20Website%20Building%20Class." 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="w-full sm:w-auto px-6 py-4 rounded-xl text-sm font-bold text-white bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-sm transition-all flex items-center justify-center gap-2">
+          <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i>
+          <span>CHAT WITH US ON WHATSAPP</span>
+        </a>
+      </div>
+
+      <div class="mt-6 text-xs text-blue-200">
+        Limited slots available for live cohort interaction.
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-slate-950 text-slate-400 py-12 text-sm border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-slate-800">
+        
+        <!-- Brand Summary with Logo -->
+        <div class="md:col-span-2 space-y-3">
+          <div class="flex items-center gap-3">
+            <svg class="w-7 h-7 text-white" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 65 L50 30 L85 65" stroke="#ffffff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div class="h-6 w-[2px] bg-white rounded-full"></div>
+            <span class="font-serif text-2xl font-bold text-white tracking-tight">Arete</span>
+          </div>
+          <p class="text-xs text-slate-400 max-w-sm">
+            Practical digital skills for the modern world. Empowering beginners and professionals to build real technology solutions.
+          </p>
+        </div>
+
+        <!-- Contact details -->
+        <div>
+          <h4 class="text-white font-bold text-sm mb-3">Contact</h4>
+          <ul class="space-y-2 text-xs">
+            <li>
+              WhatsApp: 
+              <a href="https://wa.me/2349029343288" class="text-slate-300 hover:text-emerald-400 transition-colors font-medium">09029343288</a>
+            </li>
+            <li>
+              Email: 
+              <a href="mailto:ARETEAI.CAMP@GMAIL.COM" class="text-slate-300 hover:text-blue-400 transition-colors font-medium">ARETEAI.CAMP@GMAIL.COM</a>
+            </li>
+            <li class="text-slate-500 pt-1">Lagos, Nigeria</li>
+          </ul>
+        </div>
+
+        <!-- Quick Links & Policies -->
+        <div>
+          <h4 class="text-white font-bold text-sm mb-3">Policies & Links</h4>
+          <ul class="space-y-2 text-xs">
+            <li><button onclick="openPolicyModal('privacy')" class="hover:text-white transition-colors">Privacy Policy</button></li>
+            <li><button onclick="openPolicyModal('terms')" class="hover:text-white transition-colors">Terms & Conditions</button></li>
+            <li><a href="#register" class="hover:text-white transition-colors">Class Registration</a></li>
+            <li><a href="#faq" class="hover:text-white transition-colors">Help & FAQ</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-3">
+        <div>
+          &copy; 2026 Arete Academia. All rights reserved.
+        </div>
+        <div class="text-[11px] text-slate-500">
+          Conversion-optimized landing page designed for Meta advertising.
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <a href="https://wa.me/2349029343288?text=Hello%20Arete%20Academia%2C%20I%20have%20an%20inquiry%20regarding%20the%20Website%20Building%20Class." 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Direct WhatsApp Contact"
+     class="fixed bottom-5 right-5 z-40 bg-emerald-600 hover:bg-emerald-500 text-white p-3.5 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 group">
+    <i data-lucide="message-circle" class="w-6 h-6 fill-white text-emerald-600"></i>
+    <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out text-xs font-bold pl-0 group-hover:pl-2">
+      Chat With Us
+    </span>
+  </a>
+
+  <div id="projectModal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 text-slate-800 shadow-2xl relative">
+      <button onclick="closeProjectModal()" class="absolute top-4 right-4 p-1 rounded-full text-slate-400 hover:text-slate-800 hover:bg-slate-100">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <span id="modalCategory" class="text-xs font-bold text-arete-600 uppercase tracking-wider">Project Details</span>
+      <h3 id="modalTitle" class="text-xl font-bold text-slate-900 mt-1">Project Title</h3>
+      <p id="modalDesc" class="text-sm text-slate-600 mt-3 leading-relaxed">Project description goes here.</p>
+      
+      <div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between">
+        <span class="text-xs text-slate-500">Live Hands-on Project</span>
+        <button onclick="closeProjectModal(); location.href='#register';" class="px-4 py-2 bg-arete-600 hover:bg-arete-700 text-white rounded-lg text-xs font-bold transition-all">
+          Learn to Build This
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="policyModal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 text-slate-800 shadow-2xl relative">
+      <button onclick="closePolicyModal()" class="absolute top-4 right-4 p-1 rounded-full text-slate-400 hover:text-slate-800 hover:bg-slate-100">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <h3 id="policyModalTitle" class="text-lg font-bold text-slate-900 mb-3">Policy</h3>
+      <div id="policyModalBody" class="text-xs text-slate-600 space-y-2 leading-relaxed max-h-80 overflow-y-auto pr-2">
+      </div>
+      <div class="mt-5 text-right">
+        <button onclick="closePolicyModal()" class="px-4 py-2 bg-slate-200 hover:bg-slate-300 text-slate-800 rounded-lg text-xs font-bold">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Success / Paystack Redirect Modal -->
+  <div id="successModal" class="fixed inset-0 z-50 bg-slate-950/85 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 sm:p-8 text-slate-800 shadow-2xl text-center relative animate-in fade-in zoom-in duration-200">
+      
+      <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+        <i data-lucide="check" class="w-8 h-8 stroke-[3]"></i>
+      </div>
+
+      <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900">
+        Registration Received!
+      </h3>
+      
+      <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+        Your information has been captured and sent to our system. Now complete your <strong>₦9,999</strong> enrollment payment on Paystack.
+      </p>
+
+      <div class="my-5 p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-left text-xs space-y-1.5 text-slate-600">
+        <div class="flex items-center gap-2">
+          <span class="w-4 h-4 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-[10px]">✓</span>
+          <span>1. Details logged with Arete Academia</span>
+        </div>
+        <div class="flex items-center gap-2 font-bold text-arete-700">
+          <span class="w-4 h-4 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-[10px]">2</span>
+          <span>2. Secure Checkout on Paystack (₦9,999)</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-4 h-4 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center font-bold text-[10px]">3</span>
+          <span>3. Automated Email Confirmation with links</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-4 h-4 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center font-bold text-[10px]">4</span>
+          <span>4. Live WhatsApp Cohort Group Access</span>
+        </div>
+      </div>
+
+      <div class="my-4 p-3 rounded-xl bg-emerald-50 border border-emerald-200 text-xs text-emerald-800 font-semibold">
+        Redirecting to Paystack in <span id="countdownTimer" class="font-bold text-emerald-950 text-base">3</span> seconds...
+      </div>
+
+      <div class="space-y-3">
+        <a id="paystackPayLink" href="https://paystack.shop/pay/9m5bno0mgb" target="_blank" class="w-full py-3.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm flex items-center justify-center gap-2 shadow-lg transition-all">
+          <i data-lucide="credit-card" class="w-4 h-4"></i>
+          <span>Pay ₦9,999 on Paystack Now</span>
+        </a>
+        <button onclick="closeSuccessModal()" class="text-xs text-slate-500 hover:text-slate-700 underline block mx-auto">
+          Back to Website
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    // Initialize Lucide Icons
+    document.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+    });
+
+    // Mobile Navigation Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+
+    // Close mobile menu on anchor click
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        if (mobileMenu) mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Interactive Hero Mockup Switcher
+    const mockupData = {
+      biz: {
+        url: 'https://nexus-logistics.com',
+        brand: 'Nexus Delivery & Freight',
+        tag: 'Logistics & Supply',
+        title: 'Fast, Reliable Interstate Freight Across Nigeria',
+        desc: 'End-to-end deliveries with GPS tracking, scheduled pickups, and instant online quotes.',
+        btn: 'Book Shipment',
+        phoneBanner: 'Nexus Express Delivery'
+      },
+      portfolio: {
+        url: 'https://david-adeyemi.me',
+        brand: 'David Adeyemi | Creative Tech',
+        tag: 'UI/UX & Web Design',
+        title: 'Crafting High-Converting Web Experiences That Sell',
+        desc: 'Helping founders and growing businesses launch high-impact digital platforms and sites.',
+        btn: 'View Projects',
+        phoneBanner: 'David Adeyemi Portfolio'
+      },
+      landing: {
+        url: 'https://leadbooster.app',
+        brand: 'SolarTech Solutions',
+        tag: 'Clean Energy Systems',
+        title: 'Never Worry About Blackouts: 24/7 Home Solar Inverters',
+        desc: 'Zero noise, zero fuel costs. Get an instant quote installed in 48 hours with 2-year warranty.',
+        btn: 'Get Free Audit',
+        phoneBanner: 'Solar Inverter Systems'
+      }
+    };
+
+    function switchMockup(type) {
+      ['biz', 'portfolio', 'landing'].forEach(t => {
+        const btn = document.getElementById('tab-' + t);
+        if (t === type) {
+          btn.className = 'px-3 py-1 rounded font-medium bg-arete-600 text-white transition-all';
+        } else {
+          btn.className = 'px-3 py-1 rounded font-medium hover:text-white transition-all';
+        }
+      });
+
+      const data = mockupData[type];
+      if (!data) return;
+
+      document.getElementById('mockup-url').textContent = data.url;
+      document.getElementById('mockup-brand').textContent = data.brand;
+      document.getElementById('mockup-tag').textContent = data.tag;
+      document.getElementById('mockup-title').textContent = data.title;
+      document.getElementById('mockup-desc').textContent = data.desc;
+      document.getElementById('mockup-btn').textContent = data.btn;
+      document.getElementById('phone-banner').textContent = data.phoneBanner;
+    }
+
+    // FAQ Accordion Toggle
+    function toggleFaq(index) {
+      const ans = document.getElementById(`faq-ans-${index}`);
+      const icon = document.getElementById(`faq-icon-${index}`);
+      
+      const isHidden = ans.classList.contains('hidden');
+      
+      for (let i = 1; i <= 8; i++) {
+        const a = document.getElementById(`faq-ans-${i}`);
+        const ic = document.getElementById(`faq-icon-${i}`);
+        if (a) a.classList.add('hidden');
+        if (ic) ic.style.transform = 'rotate(0deg)';
+      }
+
+      if (isHidden) {
+        ans.classList.remove('hidden');
+        icon.style.transform = 'rotate(180deg)';
+      }
+    }
+
+    // Project Details Modal
+    function openProjectModal(category, title, desc) {
+      document.getElementById('modalCategory').textContent = category;
+      document.getElementById('modalTitle').textContent = title;
+      document.getElementById('modalDesc').textContent = desc;
+      const modal = document.getElementById('projectModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeProjectModal() {
+      const modal = document.getElementById('projectModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // Policy Modals
+    function openPolicyModal(type) {
+      const modal = document.getElementById('policyModal');
+      const title = document.getElementById('policyModalTitle');
+      const body = document.getElementById('policyModalBody');
+
+      if (type === 'privacy') {
+        title.textContent = 'Privacy Policy';
+        body.innerHTML = `
+          <p><strong>Arete Academia</strong> respects your privacy. We collect your contact details (name, email, phone number) solely for class registration, communication regarding the Website Building Class, and WhatsApp onboarding.</p>
+          <p>We do not sell, rent, or distribute your personal data to unauthorized third parties. You may request deletion of your contact information at any time by contacting us.</p>
+        `;
+      } else {
+        title.textContent = 'Terms & Conditions';
+        body.innerHTML = `
+          <p><strong>Class Terms:</strong> Access to the live masterclass is granted upon payment confirmation of the standard admission fee (₦9,999 for this promotional batch).</p>
+          <p>Participants are expected to abide by community guidelines. Course materials, recorded sessions, and proprietary guides provided by Arete Academia are for individual educational use only.</p>
+        `;
+      }
+
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closePolicyModal() {
+      const modal = document.getElementById('policyModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function closeSuccessModal() {
+      const modal = document.getElementById('successModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // Registration Form Validation, Meta Pixel Tracking, Zapier Webhook & Paystack Redirect
+    async function handleRegistrationSubmit(e) {
+      e.preventDefault();
+
+      const form = document.getElementById('registrationForm');
+      const submitBtn = document.getElementById('submitBtn');
+      const submitBtnText = document.getElementById('submitBtnText');
+
+      const fullName = document.getElementById('fullName').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const whatsapp = document.getElementById('whatsapp').value.trim();
+      const occupation = document.getElementById('occupation').value.trim();
+      const experience = document.getElementById('experience').value;
+      const reason = document.getElementById('reason').value.trim();
+      const referral = document.getElementById('referral').value;
+      const agree = document.getElementById('agree').checked;
+
+      // Reset errors
+      const fields = ['fullName', 'email', 'whatsapp', 'occupation', 'experience', 'reason', 'referral', 'agree'];
+      fields.forEach(f => {
+        const errEl = document.getElementById(`error-${f}`);
+        if (errEl) errEl.classList.add('hidden');
+      });
+
+      let isValid = true;
+
+      if (!fullName) {
+        document.getElementById('error-fullName').classList.remove('hidden');
+        isValid = false;
+      }
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!email || !emailRegex.test(email)) {
+        document.getElementById('error-email').classList.remove('hidden');
+        isValid = false;
+      }
+
+      if (!whatsapp || whatsapp.length < 9) {
+        document.getElementById('error-whatsapp').classList.remove('hidden');
+        isValid = false;
+      }
+
+      if (!occupation) {
+        document.getElementById('error-occupation').classList.remove('hidden');
+        isValid = false;
+      }
+
+      if (!experience) {
+        document.getElementById('error-experience').classList.remove('hidden');
+        isValid = false;
+      }
+
+      if (!reason) {
+        document.getElementById('error-reason').classList.remove('hidden');
+        isValid = false;
+      }
+
+      if (!referral) {
+        document.getElementById('error-referral').classList.remove('hidden');
+        isValid = false;
+      }
+
+      if (!agree) {
+        document.getElementById('error-agree').classList.remove('hidden');
+        isValid = false;
+      }
+
+      if (!isValid) return;
+
+      // 1. Fire Meta Pixel Conversion Events
+      if (typeof fbq === 'function') {
+        fbq('track', 'InitiateCheckout', {
+          content_name: 'Website Building Masterclass',
+          content_category: 'Course Admission',
+          value: 9999.00,
+          currency: 'NGN'
+        });
+
+        fbq('track', 'Lead', {
+          content_name: 'Student Form Submitted',
+          value: 9999.00,
+          currency: 'NGN'
+        });
+      }
+
+      // Disable button and show spinner state
+      submitBtn.disabled = true;
+      submitBtnText.textContent = "Processing & Saving Registration...";
+
+      const studentPayload = {
+        fullName,
+        email,
+        whatsapp,
+        occupation,
+        experience,
+        reason,
+        referral,
+        amount: 9999,
+        currency: "NGN",
+        source: "Landing Page Form",
+        submittedAt: new Date().toISOString()
+      };
+
+      // 2. Save locally as safety backup
+      try {
+        const existing = JSON.parse(localStorage.getItem('arete_registrations') || '[]');
+        existing.push(studentPayload);
+        localStorage.setItem('arete_registrations', JSON.stringify(existing));
+      } catch (err) {
+        console.warn('Storage unavailable:', err);
+      }
+
+      // 3. Transmit to Zapier Webhook
+      const zapierWebhookUrl = "https://hooks.zapier.com/hooks/catch/28918326/4d759rm/";
+      try {
+        await fetch(zapierWebhookUrl, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(studentPayload),
+          mode: "no-cors"
+        });
+      } catch (err) {
+        console.error("Zapier submission logged:", err);
+      }
+
+      // Paystack Payment Checkout Destination
+      const paystackUrl = "https://paystack.shop/pay/9m5bno0mgb";
+
+      // Show confirmation modal
+      const successModal = document.getElementById('successModal');
+      successModal.classList.remove('hidden');
+      successModal.classList.add('flex');
+
+      // Countdown & Auto-Redirect to Paystack
+      let count = 3;
+      const timerDisplay = document.getElementById('countdownTimer');
+      timerDisplay.textContent = count;
+
+      const countdownInterval = setInterval(() => {
+        count--;
+        if (timerDisplay) timerDisplay.textContent = count;
+        
+        if (count <= 0) {
+          clearInterval(countdownInterval);
+          window.location.href = paystackUrl;
+        }
+      }, 1000);
+
+      // Reset form & restore button
+      form.reset();
+      submitBtn.disabled = false;
+      submitBtnText.textContent = "PROCEED TO PAY ₦9,999 ON PAYSTACK";
+    }
+  </script>
+</body>
+</html>
